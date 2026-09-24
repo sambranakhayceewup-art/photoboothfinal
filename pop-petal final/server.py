@@ -1,4 +1,4 @@
-"""PetalPop: Python Flask web application and print-ready photo processing."""
+
 from io import BytesIO
 import base64
 import binascii
@@ -18,7 +18,6 @@ def health():
 
 @app.post('/api/print-ready')
 def print_ready():
-    """Convert the browser's final decorated canvas into a 300-DPI PNG.
 
     No image is retained on the server; processed bytes are returned immediately.
     """
